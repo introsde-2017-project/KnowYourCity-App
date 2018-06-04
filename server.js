@@ -13,7 +13,7 @@ app.listen(process.env.PORT || 8080);
 app.use(express.static(__dirname + '/dist'));
 
 app.get('*', function (req, res) {
-    const index = path.join(__dirname + 'dist/index.html');
+    const index = path.join(__dirname + '/dist/index.html');
     res.sendFile(index);
   });
 
