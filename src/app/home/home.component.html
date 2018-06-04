@@ -1,0 +1,41 @@
+<div class="container">
+  <nav class="nav-extended">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">
+        <i class="material-icons">cloud</i>Know Your City</a>
+      <ul id="nav-mobile" class="right">
+        <li>
+          <a (click)="Logout()">Logout</a>
+        </li>
+      </ul>
+      <ul id="nav-mobile" class="right">
+          <li>
+            <a (click)="ShowDetail()">Detail</a>
+          </li>
+        </ul>
+    </div>
+</nav>
+<app-my-detail *ngIf="showDetail">Detail</app-my-detail>
+    
+    <blockquote>
+        <app-loading-spinner *ngIf="showSpinner"></app-loading-spinner>
+      {{quotes}}
+      <br>
+      {{author}}
+    </blockquote>
+  <nav class="nav-extended">
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a routerLink='/search' routerLinkActive='active'><i class="material-icons">search</i></a></li>
+        <li class="tab"><a routerLink='/recom' routerLinkActive='active'>Recommendations</a></li>
+        <li class="tab"><a routerLink='/myrating' routerLinkActive='active'>My Ratings</a></li>
+    </ul>
+  </div>
+</nav>
+  <router-outlet></router-outlet>
+</div>
+
+  
+
+
+  

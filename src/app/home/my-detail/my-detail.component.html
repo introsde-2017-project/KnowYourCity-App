@@ -1,0 +1,21 @@
+<app-loading-spinner *ngIf="showSpinner"></app-loading-spinner>
+<blockquote>
+    UserName: <a>{{user.userName}}</a>
+    <br>
+    FirstName: <a>{{user.firstName}}</a>
+    <br>
+    LastName: <a>{{user.lastName}}</a>
+    <br>
+    Email: <a>{{user.email}}</a>
+    <br>
+    FoodTypes: 
+    <a *ngFor="let type of user.foodTypes">
+      {{type}}, 
+    </a>
+    <br>
+    Movie Gen: 
+    <a *ngFor="let type of user.movieGens">
+      {{type}}, 
+    </a>
+    <br>
+  </blockquote>
