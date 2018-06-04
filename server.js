@@ -10,10 +10,10 @@ const app = express();
 app.listen(process.env.PORT || 8080);
 
 // Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/dist'));
+app.use(express.static(__dirname + '/dist/introsde'));
 
 app.get('*', function (req, res) {
-    const index = path.join(__dirname + '/dist/index.html');
+    const index = path.join(__dirname + '/dist/introsde/index.html');
     res.sendFile(index);
   });
 
