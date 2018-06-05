@@ -19,6 +19,8 @@ export class SignUpComponent implements OnInit {
   selectedFoodTypes: string[]=[];
   selectedMovieTypes: string[]=[];
   showSpinner: boolean=false;
+  showSpinnerF: boolean=true;
+  showSpinnerM: boolean=true;
 
   constructor(private userService: UserService, private toastr: ToastrService, private router: Router) { 
     
@@ -65,6 +67,7 @@ export class SignUpComponent implements OnInit {
   initFoodTypes(){
     this.userService.getFoodTypes().subscribe(
       (data : any)=>{
+        this.showSpinnerF=false;
         for(var i=0; i<data.length; i++){
           this.foodTypes.push(new Ftype(data[i],i));
         }
@@ -74,6 +77,7 @@ export class SignUpComponent implements OnInit {
   initMovieGen(){
     this.userService.getMovieGens().subscribe(
       (data : any)=>{
+        this.showSpinnerM=false;
         for(var i=0; i<data.length; i++){
           this.movieGens.push(new Ftype(data[i],i));
         }

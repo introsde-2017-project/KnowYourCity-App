@@ -28,6 +28,7 @@
         </div>
           <div class="row" class="input-field col s12">
             <h6>Food Preference</h6>
+            <app-loading-spinner *ngIf="showSpinnerF"></app-loading-spinner>
           </div>
           <div *ngFor="let type of foodTypes">
                <input type="checkbox" id="{{type.name}}" name="{{type.name}}" value="{{type.value}}" [(ngModel)]="type.selected">
@@ -36,6 +37,7 @@
 
           <div class="row" class="input-field col s12">
            <h6>Movie Preference</h6>
+           <app-loading-spinner *ngIf="showSpinnerM"></app-loading-spinner>
            </div>
            <div *ngFor="let gen of movieGens">
               <input type="checkbox" id="{{gen.name}}" name="{{gen.name}}" value="{{gen.value}}" [(ngModel)]="gen.selected">
