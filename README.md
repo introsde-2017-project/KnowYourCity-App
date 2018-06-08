@@ -9,7 +9,7 @@ NAME: Main muhammad faheem - Jan
 EMAIL:main.jan@unitn.it  
   
 heroku App:  https://knowyourcity123.herokuapp.com/login   
-Git ripo:  https://github.com/introsde-2017-project/KnowYourCity-App 
+Git ripo:  https://github.com/introsde-2017-project/KnowYourCity-App  
 Project WIKI: https://github.com/introsde-2017-project/Wiki  
 
 ## introduction:
