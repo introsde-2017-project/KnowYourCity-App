@@ -1,27 +1,27 @@
-# Introsde
+# introsde-2017-project-UI
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
-## Development server
+NAME: Cheema Danish Asghar  
+EMAIL: danishasghar.cheema@studenti.unitn.it  
+  
+Group Partner:  
+NAME: Main muhammad faheem - Jan  
+EMAIL:main.jan@unitn.it  
+  
+heroku App:  https://knowyourcity123.herokuapp.com/login   
+Git ripo:  https://github.com/introsde-2017-project/KnowYourCity-App  
+Project WIKI: https://github.com/introsde-2017-project/Wiki  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## introduction:
+This a User interface for the project of introsde-2017, completely working app for a new user who can signup, login save his preferences and get recommendations according to his preferences, intract with recommendations.  
+App is written in Angular 6 which consumes Rest Api and do all the CRUD request needed for the app to work accordingly.  
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Execuation
+clone or download the code
+```
+git init
+git add .
+git commit -am "initial commit"
+heroku create NAME-OF-HEROKU-APP
+git push heroku master
+```
