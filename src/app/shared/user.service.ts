@@ -147,4 +147,21 @@ export class UserService {
             .set('Authorization','Bearer '.concat(localStorage.getItem('token')));
     return this.http.get(this.rootUrl + '/user/detail', {headers: headers});
   }
+
+  getAllFood(){
+    const headers = new HttpHeaders()
+            .set('Content-Type', 'application/json; charset=utf-8')
+            .set('Accept','application/json; charset=utf-8')
+            .set('Authorization','Bearer '.concat(localStorage.getItem('token')));
+    return this.http.get(this.rootUrl + '/secure/getall/f', {headers: headers});
+  }
+
+  getAllMovie(){
+    const headers = new HttpHeaders()
+            .set('Content-Type', 'application/json; charset=utf-8')
+            .set('Accept','application/json; charset=utf-8')
+            .set('Authorization','Bearer '.concat(localStorage.getItem('token')));
+    return this.http.get(this.movieUrl + '/secure/getall/m', {headers: headers});
+  }
+
 }

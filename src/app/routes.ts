@@ -7,6 +7,7 @@ import { RecomComponent } from './home/recom/recom.component';
 import { MyRatingComponent } from './home/my-rating/my-rating.component';
 import { SearchComponent } from './home/search/search.component';
 import { AuthGuard } from './auth/auth.guard';
+import { AnalysisComponent } from './home/analysis/analysis.component';
  
 export const appRoutes: Routes = [
     { 
@@ -20,6 +21,10 @@ export const appRoutes: Routes = [
     { 
         path: 'myrating', component: HomeComponent, canActivate:[AuthGuard], 
         children: [{ path: '', component: MyRatingComponent }]
+    },
+    { 
+        path: 'analysis', component: HomeComponent, canActivate:[AuthGuard], 
+        children: [{ path: '', component: AnalysisComponent }]
     },
     {
         path: 'signup', component: UserComponent,

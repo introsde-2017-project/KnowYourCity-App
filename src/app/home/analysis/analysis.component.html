@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col s12" >
+    <div class="card">
+      <div class="card-panel">
+          
+          <table class="blue-text text-darken-2">
+              <thead>
+                <tr>
+                    <th>Food Name</th>
+                    <th>Type</th>
+                    <th>Location</th>
+                    <th>Average Rating</th>
+                    <th>Number of Users</th>
+                </tr>
+              </thead>
+              <app-loading-spinner *ngIf="showSpinnerF"></app-loading-spinner>
+              <tbody >
+                <tr *ngFor="let rec of allFood; let i = index">
+                  <td>{{rec.itemId}}</td>
+                  <td>{{rec.itemType}}</td>
+                  <td>{{rec.location}}</td>  
+                  <td>{{rec.avgRating}}</td>
+                  <td>{{rec.numberUserRating}}</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col s12" >
+    <div class="card">
+      <div class="card-panel">
+          
+          <table class="blue-text text-darken-2">
+              <thead>
+                <tr>
+                    <th>Movie Name</th>
+                    <th>Genre</th>
+                    <th>Location</th>
+                    <th>Average Rating</th>
+                    <th>Number of Users</th>
+                </tr>
+              </thead>
+              <app-loading-spinner *ngIf="showSpinnerM"></app-loading-spinner>
+              <tbody >
+                <tr *ngFor="let rec of allMovie; let i = index">
+                  <td>{{rec.itemId}}</td>
+                  <td>{{rec.itemType}}</td>
+                  <td>{{rec.location}}</td>  
+                  <td>{{rec.avgRating}}</td>
+                  <td>{{rec.numberUserRating}}</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+    </div>
+  </div>
+</div>

@@ -19,6 +19,7 @@ import { SearchComponent } from './home/search/search.component';
 import { LoadingSpinnerComponent } from './loading-spinner/loading-spinner.component';
 import { MyDetailComponent } from './home/my-detail/my-detail.component';
 import { AuthGuard } from './auth/auth.guard';
+import { AnalysisComponent } from './home/analysis/analysis.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { AuthGuard } from './auth/auth.guard';
     SearchComponent,
     LoadingSpinnerComponent,
     MyDetailComponent,
+    AnalysisComponent,
   ],
   imports: [
     BrowserModule,
